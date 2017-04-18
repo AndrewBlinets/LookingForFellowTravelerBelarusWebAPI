@@ -16,11 +16,9 @@ public class Region {
     private long id;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinColumn(name = "id_country", nullable = false, insertable =  false, updatable = false)
+    @JoinColumn(name = "id_country", nullable = false)
     private Country country;
 
-    @OneToMany(mappedBy = "region")
-    private List<City> city;
 
 
     @Column(name = "Name", nullable = false)
@@ -43,14 +41,6 @@ public class Region {
 
     public void setCountry(Country country) {
         this.country = country;
-    }
-
-    public List<City> getCity() {
-        return city;
-    }
-
-    public void setCity(List<City> city) {
-        this.city = city;
     }
 
     public String getName() {

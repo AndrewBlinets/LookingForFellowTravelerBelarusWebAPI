@@ -9,7 +9,7 @@ public interface UserService {
 
     List<User> getAll();
     User getByID(long id);
-    User save(User remind);
+    User save(User user);
     void remove(long id);
     UserDTOAutification autification(String login, String hashPassword);
 }

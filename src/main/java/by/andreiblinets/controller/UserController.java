@@ -1,25 +1,41 @@
 package by.andreiblinets.controller;
 
 
+import by.andreiblinets.entity.User;
 import by.andreiblinets.service.UserService;
-import by.andreiblinets.service.serviceimpl.UserSimple;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService service;
 
-    @RequestMapping(value = "/get", method = RequestMethod.GET)
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
     @ResponseBody
-    public String getReminder(ModelMap model) {
-        return "My reminderweb";
+    public List<User> getAllReminders() {
+        return service.getAll();
     }
+
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+    @ResponseBody
+    public User getReminder(@PathVariable("id") long remindID) {
+        return service.getByID(remindID);
+    }
+
+    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    @ResponseBody
+    public User saveRemider(@RequestBody User user) {
+        return service.save(user);
+    }
+
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
+    @ResponseBody
+    public void delete(@PathVariable long id) {
+        service.remove(id);
+    }
+
 }

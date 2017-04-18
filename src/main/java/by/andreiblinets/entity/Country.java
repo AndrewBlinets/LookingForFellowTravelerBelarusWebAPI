@@ -14,9 +14,6 @@ public class Country {
     @GenericGenerator(name = "increment", strategy = "increment")
     private long id;
 
-    @OneToMany(mappedBy = "country")
-    private List<Region> region;
-
     @Column(name = "Name", nullable = false)
     private String name;
 
@@ -29,14 +26,6 @@ public class Country {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public List<Region> getRegion() {
-        return region;
-    }
-
-    public void setRegion(List<Region> region) {
-        this.region = region;
     }
 
     public String getName() {

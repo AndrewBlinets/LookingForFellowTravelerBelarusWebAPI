@@ -15,7 +15,7 @@ public class DateUpdateCity {
     @GenericGenerator(name = "increment", strategy = "increment")
     private long id;
 
-    @Column(name = "dataupdate", nullable = false)
+    @Column(name = "dataupdatecity", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataTimeUpdate;
 
@@ -36,5 +36,13 @@ public class DateUpdateCity {
 
     public void setDataTimeUpdate(Date dataTimeUpdate) {
         this.dataTimeUpdate = dataTimeUpdate;
+    }
+
+    @Override
+    public String toString() {
+        return "DateUpdateCity{" +
+                "id=" + id +
+                ", dataTimeUpdate=" + dataTimeUpdate +
+                '}';
     }
 }

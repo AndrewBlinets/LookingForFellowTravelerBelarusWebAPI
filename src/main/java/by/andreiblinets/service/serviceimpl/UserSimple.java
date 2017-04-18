@@ -2,7 +2,7 @@ package by.andreiblinets.service.serviceimpl;
 
 import by.andreiblinets.DTO.UserDTOAutification;
 import by.andreiblinets.entity.User;
-import by.andreiblinets.repository.UserReposiroty;
+import by.andreiblinets.repository.UserRepository;
 import by.andreiblinets.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.List;
 public class UserSimple implements UserService {
 
     @Autowired
-    private UserReposiroty userReposiroty;
+    private UserRepository userRepository;
 
     public List<User> getAll() {
         return null;
@@ -23,8 +23,8 @@ public class UserSimple implements UserService {
         return null;
     }
 
-    public User save(User remind) {
-        return null;
+    public User save(User user) {
+        return userRepository.saveAndFlush(user);
     }
 
     public void remove(long id) {

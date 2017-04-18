@@ -15,7 +15,7 @@ public class City {
 
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinColumn(name = "id_region", nullable = false, insertable =  false, updatable = false)
+    @JoinColumn(name = "id_region", nullable = false)
     private Region region;
 
     @Column(name = "Name", nullable = false)
