@@ -1,6 +1,5 @@
 package by.andreiblinets;
 
-import by.andreiblinets.config.DatabaseConfig;
 import by.andreiblinets.config.WebAppConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;

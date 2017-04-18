@@ -4,6 +4,11 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * This class represents the User model.
+ *
+ * @author Andrew Blinets
+ */
 
 @Entity
 @Table(name = "User")
