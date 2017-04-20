@@ -1,5 +1,6 @@
 package by.andreiblinets.controller;
 
+import by.andreiblinets.entity.DateUpdateInformation;
 import by.andreiblinets.service.DateUpdateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +16,8 @@ public class DataUpdateController {
 
     @RequestMapping(value = "/lastdataupdate", method = RequestMethod.GET)
     @ResponseBody
-    public String getLastDateUpdate()
+    public DateUpdateInformation getLastDateUpdate()
     {
-        return String.valueOf(service.getByLastUpdate().getDataTimeUpdate());
+        return service.getByLastUpdate();
     }
 }

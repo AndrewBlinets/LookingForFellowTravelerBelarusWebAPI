@@ -1,14 +1,14 @@
 package by.andreiblinets.service;
 
-import by.andreiblinets.entity.DateUpdateCity;
+import by.andreiblinets.entity.DateUpdateInformation;
 
 import java.util.List;
 
 public interface DateUpdateService {
 
-    List<DateUpdateCity> getAll();
-    DateUpdateCity getByID(long id);
-    DateUpdateCity getByLastUpdate();
-    DateUpdateCity save(DateUpdateCity dateUpdateCity);
+    List<DateUpdateInformation> getAll();
+    DateUpdateInformation getByID(long id);
+    DateUpdateInformation getByLastUpdate();
+    DateUpdateInformation save(DateUpdateInformation dateUpdateInformation);
     void remove(long id);
 }

@@ -1,8 +1,10 @@
 package by.andreiblinets.controller;
 
-import by.andreiblinets.DTO.CityDTO;
-import by.andreiblinets.entity.City;
-import by.andreiblinets.service.CityService;
+import by.andreiblinets.DTO.RegionDTO;
+import by.andreiblinets.entity.Country;
+import by.andreiblinets.entity.Region;
+import by.andreiblinets.service.CountreService;
+import by.andreiblinets.service.RegionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,14 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class CityController {
+public class RegionController {
 
     @Autowired
-    private CityService service;
+    private RegionService service;
 
-    @RequestMapping(value = "/cities", method = RequestMethod.GET)
+    @RequestMapping(value = "/regions", method = RequestMethod.GET)
     @ResponseBody
-    public List<CityDTO> getCity()
+    public List<RegionDTO> getRegions()
     {
         return service.getAll();
     }

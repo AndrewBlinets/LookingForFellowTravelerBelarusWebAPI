@@ -17,6 +17,9 @@ public class Country {
     @Column(name = "Name", nullable = false)
     private String name;
 
+    @Column(name = "kodcurrency", nullable = false)
+    private String kodCurrency;
+
     public Country() {
     }
 
@@ -26,6 +29,14 @@ public class Country {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getKodCurrency() {
+        return kodCurrency;
+    }
+
+    public void setKodCurrency(String kodCurrency) {
+        this.kodCurrency = kodCurrency;
     }
 
     public String getName() {
