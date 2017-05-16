@@ -1,13 +1,13 @@
 package by.andreiblinets.entity;
 
 
+import by.andreiblinets.constant.RegionConstant;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
-@Table(name = "Region")
+@Table(name = RegionConstant.TABLE_NAME)
 public class Region {
 
     @Id
@@ -16,12 +16,12 @@ public class Region {
     private long id;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinColumn(name = "id_country", nullable = false)
+    @JoinColumn(name = RegionConstant.ID_COUNTRY, nullable = false)
     private Country country;
 
 
 
-    @Column(name = "Name", nullable = false)
+    @Column(name = RegionConstant.NAME_REGIN, nullable = false)
     private String name;
 
     public Region() {

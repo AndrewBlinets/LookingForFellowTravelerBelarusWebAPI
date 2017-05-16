@@ -1,8 +1,7 @@
 package by.andreiblinets.controller;
 
-import by.andreiblinets.entity.City;
+import by.andreiblinets.constant.CountryConstant;
 import by.andreiblinets.entity.Country;
-import by.andreiblinets.service.CityService;
 import by.andreiblinets.service.CountreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +17,7 @@ public class CountryController {
     @Autowired
     private CountreService service;
 
-    @RequestMapping(value = "/countries", method = RequestMethod.GET)
+    @RequestMapping(value = CountryConstant.COUNTRIES, method = RequestMethod.GET)
     @ResponseBody
     public List<Country> getCountries()
     {

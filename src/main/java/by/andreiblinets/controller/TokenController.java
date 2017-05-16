@@ -1,8 +1,8 @@
 package by.andreiblinets.controller;
 
-import by.andreiblinets.DTO.RegionDTO;
-import by.andreiblinets.constant.RegionConstant;
-import by.andreiblinets.service.RegionService;
+import by.andreiblinets.constant.TokenConstant;
+import by.andreiblinets.entity.TokenUser;
+import by.andreiblinets.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class RegionController {
+public class TokenController  {
 
     @Autowired
-    private RegionService service;
+    private TokenService service;
 
-    @RequestMapping(value = RegionConstant.REGIONS, method = RequestMethod.GET)
+    @RequestMapping(value = TokenConstant.TOKENS, method = RequestMethod.GET)
     @ResponseBody
-    public List<RegionDTO> getRegions()
+    public List<TokenUser> getCity()
     {
         return service.getAll();
     }

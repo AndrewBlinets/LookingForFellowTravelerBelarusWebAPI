@@ -1,11 +1,12 @@
 package by.andreiblinets.entity;
 
+import by.andreiblinets.constant.CityConstant;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "City")
+@Table(name = CityConstant.NAME_TABLE)
 public class City {
 
     @Id
@@ -15,10 +16,10 @@ public class City {
 
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinColumn(name = "id_region", nullable = false)
+    @JoinColumn(name = CityConstant.ID_REGION, nullable = false)
     private Region region;
 
-    @Column(name = "Name", nullable = false)
+    @Column(name = CityConstant.NAME_CITY, nullable = false)
     private String name;
 
     public City() {

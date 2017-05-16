@@ -1,33 +1,34 @@
 package by.andreiblinets.entity;
 
 
+import by.andreiblinets.constant.LastUpdateInformationConstant;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "dateupdate")
-public class DateUpdateInformation {
+@Table(name = LastUpdateInformationConstant.NAME_TABLE)
+public class LastUpdateInformation {
 
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     private long id;
 
-    @Column(name = "dataupdatecity", nullable = false)
+    @Column(name = LastUpdateInformationConstant.LAST_UPDATE_CITY, nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date dataTimeUpdateCity;
+    private Date lastUpdateCity;
 
-    @Column(name = "dataupdateregion", nullable = false)
+    @Column(name = LastUpdateInformationConstant.LAST_UPDATE_REGION, nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataTimeUpdateRegion;
 
-    @Column(name = "dataupdatecountry", nullable = false)
+    @Column(name = LastUpdateInformationConstant.LAST_UPDATE_COUNTRY, nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataTimeUpdateCountry;
 
-    public DateUpdateInformation() {
+    public LastUpdateInformation() {
     }
 
     public long getId() {
@@ -38,12 +39,12 @@ public class DateUpdateInformation {
         this.id = id;
     }
 
-    public Date getDataTimeUpdateCity() {
-        return dataTimeUpdateCity;
+    public Date getLastUpdateCity() {
+        return lastUpdateCity;
     }
 
-    public void setDataTimeUpdateCity(Date dataTimeUpdateCity) {
-        this.dataTimeUpdateCity = dataTimeUpdateCity;
+    public void setLastUpdateCity(Date lastUpdateCity) {
+        this.lastUpdateCity = lastUpdateCity;
     }
 
     public Date getDataTimeUpdateRegion() {

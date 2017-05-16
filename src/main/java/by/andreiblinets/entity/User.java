@@ -1,5 +1,6 @@
 package by.andreiblinets.entity;
 
+import by.andreiblinets.constant.UserConstant;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Date;
@@ -11,7 +12,7 @@ import java.util.Date;
  */
 
 @Entity
-@Table(name = "User")
+@Table(name = UserConstant.NAME_TABLE)
 public class User {
 
     @Id
@@ -19,39 +20,36 @@ public class User {
     @GenericGenerator(name = "increment", strategy = "increment")
     private long id;
 
-    @Column(name = "Name", nullable = false)
+    @Column(name = UserConstant.NAME, nullable = false)
     private String name;
 
-    @Column(name = "Surname", nullable = false)
+    @Column(name = UserConstant.SURNAME, nullable = false)
     private String surname;
 
-    @Column(name = "Phone", nullable = false)
+    @Column(name = UserConstant.PHONE, nullable = false)
     private String phone;
 
-    @Column(name = "Email", nullable = false)
+    @Column(name = UserConstant.EMAIL, nullable = false)
     private String email;
 
-    @Column(name = "HashPassword", nullable = false)
+    @Column(name = UserConstant.HASH_PASSWORD, nullable = false)
     private String hashPassword;
 
-    @Column(name = "Rating", nullable = false)
+    @Column(name = UserConstant.RATING)
     private long rating;
 
-    @Column(name = "DataReg", nullable = false)
+    @Column(name = UserConstant.DATA_REGISTRATION, nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date dataTimeReg;
+    private Date dataTimeRegistration;
 
-    @Column(name = "About", nullable = false)
-    private String about;
+    @Column(name = UserConstant.ABOUT_USER)
+    private String aboutUser;
 
-    @Column(name = "Token")
-    private String token;
-
-    @Column (name = "Foto")
+    @Column (name = UserConstant.FOTO)
     private String foto;
 
-    @Column (name = "Role")
-    private String role;
+    @Column (name = UserConstant.USER_ROLE,nullable = false)
+    private String roleUser;
 
 
     public User() {
@@ -113,28 +111,20 @@ public class User {
         this.rating = rating;
     }
 
-    public Date getDataTimeReg() {
-        return dataTimeReg;
+    public Date getDataTimeRegistration() {
+        return dataTimeRegistration;
     }
 
-    public void setDataTimeReg(Date dataTimeReg) {
-        this.dataTimeReg = dataTimeReg;
+    public void setDataTimeRegistration(Date dataTimeRegistration) {
+        this.dataTimeRegistration = dataTimeRegistration;
     }
 
-    public String getAbout() {
-        return about;
+    public String getAboutUser() {
+        return aboutUser;
     }
 
-    public void setAbout(String about) {
-        this.about = about;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
+    public void setAboutUser(String aboutUser) {
+        this.aboutUser = aboutUser;
     }
 
     public String getFoto() {
@@ -145,67 +135,11 @@ public class User {
         this.foto = foto;
     }
 
-    public String getRole() {
-        return role;
+    public String getRoleUser() {
+        return roleUser;
     }
 
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (id != user.id) return false;
-        if (rating != user.rating) return false;
-        if (name != null ? !name.equals(user.name) : user.name != null) return false;
-        if (surname != null ? !surname.equals(user.surname) : user.surname != null) return false;
-        if (phone != null ? !phone.equals(user.phone) : user.phone != null) return false;
-        if (email != null ? !email.equals(user.email) : user.email != null) return false;
-        if (hashPassword != null ? !hashPassword.equals(user.hashPassword) : user.hashPassword != null) return false;
-        if (dataTimeReg != null ? !dataTimeReg.equals(user.dataTimeReg) : user.dataTimeReg != null) return false;
-        if (about != null ? !about.equals(user.about) : user.about != null) return false;
-        if (token != null ? !token.equals(user.token) : user.token != null) return false;
-        if (foto != null ? !foto.equals(user.foto) : user.foto != null) return false;
-        return role != null ? role.equals(user.role) : user.role == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (surname != null ? surname.hashCode() : 0);
-        result = 31 * result + (phone != null ? phone.hashCode() : 0);
-        result = 31 * result + (email != null ? email.hashCode() : 0);
-        result = 31 * result + (hashPassword != null ? hashPassword.hashCode() : 0);
-        result = 31 * result + (int) (rating ^ (rating >>> 32));
-        result = 31 * result + (dataTimeReg != null ? dataTimeReg.hashCode() : 0);
-        result = 31 * result + (about != null ? about.hashCode() : 0);
-        result = 31 * result + (token != null ? token.hashCode() : 0);
-        result = 31 * result + (foto != null ? foto.hashCode() : 0);
-        result = 31 * result + (role != null ? role.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        String sb = "User{" + "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", hashPassword='" + hashPassword + '\'' +
-                ", rating=" + rating +
-                ", dataTimeReg=" + dataTimeReg +
-                ", about='" + about + '\'' +
-                ", token='" + token + '\'' +
-                ", foto='" + foto + '\'' +
-                ", role='" + role + '\'' +
-                '}';
-        return sb;
+    public void setRoleUser(String roleUser) {
+        this.roleUser = roleUser;
     }
 }

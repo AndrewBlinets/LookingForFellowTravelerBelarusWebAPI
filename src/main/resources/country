@@ -1,0 +1,24 @@
+INSERT INTO
+  `country` (`id`, `Name`, `currencies`)
+VALUES
+  (1, 'Республика Беларусь', 'BYN');
+INSERT INTO
+  `country` (`id`, `Name`, `currencies`)
+VALUES
+  (2, 'Российская Федерация', 'RUB');
+INSERT INTO
+  `country` (`id`, `Name`, `currencies`)
+VALUES
+  (3, 'Украина', 'UAH');
+INSERT INTO
+  `country` (`id`, `Name`, `currencies`)
+VALUES
+  (4, 'Республика Польша', 'PLN');
+INSERT INTO
+  `country` (`id`, `Name`, `currencies`)
+VALUES
+  (5, 'Литовская Республика', 'EUR');
+INSERT INTO
+  `country` (`id`, `Name`, `currencies`)
+  VALUES
+  (6, 'Латвийская Республика', 'EUR');

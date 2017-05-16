@@ -1,12 +1,12 @@
 package by.andreiblinets.entity;
 
+import by.andreiblinets.constant.CountryConstant;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
-@Table(name = "Country")
+@Table(name = CountryConstant.NAME_TABLE)
 public class Country {
 
     @Id
@@ -14,11 +14,11 @@ public class Country {
     @GenericGenerator(name = "increment", strategy = "increment")
     private long id;
 
-    @Column(name = "Name", nullable = false)
+    @Column(name = CountryConstant.NAME_COUNTRY, nullable = false)
     private String name;
 
-    @Column(name = "kodcurrency", nullable = false)
-    private String kodCurrency;
+    @Column(name = CountryConstant.NAME_CURRENCIES, nullable = false)
+    private String currencies;
 
     public Country() {
     }
@@ -31,12 +31,12 @@ public class Country {
         this.id = id;
     }
 
-    public String getKodCurrency() {
-        return kodCurrency;
+    public String getCurrencies() {
+        return currencies;
     }
 
-    public void setKodCurrency(String kodCurrency) {
-        this.kodCurrency = kodCurrency;
+    public void setCurrencies(String currencies) {
+        this.currencies = currencies;
     }
 
     public String getName() {

@@ -1,7 +1,7 @@
 package by.andreiblinets.controller;
 
 import by.andreiblinets.DTO.CityDTO;
-import by.andreiblinets.entity.City;
+import by.andreiblinets.constant.CityConstant;
 import by.andreiblinets.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +17,7 @@ public class CityController {
     @Autowired
     private CityService service;
 
-    @RequestMapping(value = "/cities", method = RequestMethod.GET)
+    @RequestMapping(value = CityConstant.CITIES, method = RequestMethod.GET)
     @ResponseBody
     public List<CityDTO> getCity()
     {

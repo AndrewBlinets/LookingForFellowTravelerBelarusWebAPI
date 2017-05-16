@@ -1,8 +1,8 @@
 package by.andreiblinets.repository;
 
-import by.andreiblinets.entity.DateUpdateInformation;
+import by.andreiblinets.entity.LastUpdateInformation;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface DateUpdateRepository extends JpaRepository<DateUpdateInformation, Long> {
+public interface DateUpdateRepository extends JpaRepository<LastUpdateInformation, Long> {
 
 }
