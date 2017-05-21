@@ -22,11 +22,11 @@ public class LastUpdateInformation {
 
     @Column(name = LastUpdateInformationConstant.LAST_UPDATE_REGION, nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date dataTimeUpdateRegion;
+    private Date lastUpdateRegion;
 
     @Column(name = LastUpdateInformationConstant.LAST_UPDATE_COUNTRY, nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date dataTimeUpdateCountry;
+    private Date lastUpdateCountry;
 
     public LastUpdateInformation() {
     }
@@ -47,19 +47,19 @@ public class LastUpdateInformation {
         this.lastUpdateCity = lastUpdateCity;
     }
 
-    public Date getDataTimeUpdateRegion() {
-        return dataTimeUpdateRegion;
+    public Date getLastUpdateRegion() {
+        return lastUpdateRegion;
     }
 
-    public void setDataTimeUpdateRegion(Date dataTimeUpdateRegion) {
-        this.dataTimeUpdateRegion = dataTimeUpdateRegion;
+    public void setLastUpdateRegion(Date lastUpdateRegion) {
+        this.lastUpdateRegion = lastUpdateRegion;
     }
 
-    public Date getDataTimeUpdateCountry() {
-        return dataTimeUpdateCountry;
+    public Date getLastUpdateCountry() {
+        return lastUpdateCountry;
     }
 
-    public void setDataTimeUpdateCountry(Date dataTimeUpdateCountry) {
-        this.dataTimeUpdateCountry = dataTimeUpdateCountry;
+    public void setLastUpdateCountry(Date lastUpdateCountry) {
+        this.lastUpdateCountry = lastUpdateCountry;
     }
 }

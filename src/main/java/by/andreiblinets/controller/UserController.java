@@ -19,6 +19,7 @@ public class UserController {
     private UserService service;
 
     @RequestMapping (value = UserConstant.REGISTRATION, method = RequestMethod.POST)
+    @ResponseBody
     public String registration(@RequestBody UserRegistration user)
     {
         return service.save(user);

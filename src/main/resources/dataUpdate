@@ -9,4 +9,4 @@ VALUES
 INSERT INTO
   `lastupdate` (`id`,`lastUpdateCountry`,`lastUpdateRegion`,`lastUpdateCity`)
 VALUES
-  (3,'2017-04-18 00:00','2017-04-18 00:00','2017-04-18 00:00')
+  (3,'2017-05-17 00:00','2017-05-17 00:00','2017-05-17 00:00')

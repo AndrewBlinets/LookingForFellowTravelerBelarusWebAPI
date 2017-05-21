@@ -23,9 +23,13 @@ public class Trip {
     @JoinColumn(name =  TripConstant.ID_CITY_OF_ARRIVED, nullable = false)
     private City cityIdOfArrived;
 
-    @Column(name = TripConstant.DATA_TIME_OF_DEPARTURE, nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date dataTimeOfDeparture;
+    @Column(name = TripConstant.DATA_OF_DEPARTURE, nullable = false)
+    @Temporal(TemporalType.DATE)
+    private Date dataOfDeparture;
+
+    @Column(name = TripConstant.TIME_OF_DEPARTURE, nullable = false)
+    @Temporal(TemporalType.TIME)
+    private Date timeOfDeparture;
 
     @Column (name = TripConstant.COMPENSATION )
     private int compensation;
@@ -69,12 +73,12 @@ public class Trip {
         this.cityIdOfArrived = cityIdOfArrived;
     }
 
-    public Date getDataTimeOfDeparture() {
-        return dataTimeOfDeparture;
+    public Date getDataOfDeparture() {
+        return dataOfDeparture;
     }
 
-    public void setDataTimeOfDeparture(Date dataTimeOfDeparture) {
-        this.dataTimeOfDeparture = dataTimeOfDeparture;
+    public void setDataOfDeparture(Date dataOfDeparture) {
+        this.dataOfDeparture = dataOfDeparture;
     }
 
     public int getCompensation() {
@@ -123,5 +127,13 @@ public class Trip {
 
     public void setAutoAdd(boolean autoAdd) {
         this.autoAdd = autoAdd;
+    }
+
+    public Date getTimeOfDeparture() {
+        return timeOfDeparture;
+    }
+
+    public void setTimeOfDeparture(Date timeOfDeparture) {
+        this.timeOfDeparture = timeOfDeparture;
     }
 }

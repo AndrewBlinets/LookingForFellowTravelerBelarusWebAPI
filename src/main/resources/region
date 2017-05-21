@@ -1,0 +1,24 @@
+INSERT INTO
+    `region` (`id`,`name`,`idCountry`)
+VALUES
+    (1,'Минская область',1);
+INSERT INTO
+    `region` (`id`,`name`,`idCountry`)
+VALUES
+    (2,'Брестская область',1);
+INSERT INTO
+    `region` (`id`,`name`,`idCountry`)
+VALUES
+    (3,'Гродненская область',1);
+INSERT INTO
+    `region` (`id`,`name`,`idCountry`)
+VALUES
+    (4,'Витебская область',1);
+INSERT INTO
+    `region` (`id`,`name`,`idCountry`)
+VALUES
+    (5,'Могилёвская область',1);
+INSERT INTO
+    `region` (`id`,`name`,`idCountry`)
+VALUES
+    (6,'Гомельская область',1);

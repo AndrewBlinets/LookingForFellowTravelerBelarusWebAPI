@@ -1,0 +1,472 @@
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (1,'Березино',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (2,'Борисов',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (3,'Вилейка',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (4,'Воложин',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (5,'Дзержинск',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (6,'Клецк',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (7,'Копыль',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (8,'Крупки',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (9,'Логойск',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (10,'Любань',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (11,'Минск',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (12,'Молодечно',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (13,'Мядель',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (14,'Несвиж',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (15,'Марьина Горка',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (16,'Слуцк',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (17,'Смолевичи',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (18,'Солигорск',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (19,'Старые Дороги',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (20,'Столбцы',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (21,'Узда',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (22,'Червень ',1);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (23,'Брест',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (24,'Барановичи',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (25,'Берёза',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (26,'Ганцевичи',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (27,'Дрогичин',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (28,'Жабинка',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (29,'Иваново',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (30,'Ивацевичи',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (31,'Каменец',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (32,'Кобрин',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (33,'Лунинец',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (34,'Ляховичи',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (35,'Малорита',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (36,'Пинск',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (37,'Пружаны',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (38,'Столин',2);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (39,'Берестовица',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (40,'Волковыск',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (41,'Вороново',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (42,'Гродно',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (43,'Дятлово',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (44,'Зельва',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (45,'Ивье',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (46,'Кореличи',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (47,'Лида',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (48,'Мосты',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (49,'Новогрудок',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (50,'Ошмяны',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (51,'Островец',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (52,'Свислочь',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (53,'Слоним',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (54,'Сморгонь',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (55,'Щучин',3);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (56,'Витебск',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (57,'Бешенковичи',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (58,'Браслав',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (59,'Верхнедвинск',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (60,'Глубокое',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (61,'Городок',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (62,'Докшицы',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (63,'Дубровно',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (64,'Лепель',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (65,'Лиозно',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (66,'Миоры',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (67,'Орша',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (68,'Полоцк',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (69,'Поставы',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (70,'Россоны',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (71,'Сенно',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (72,'Толочин',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (73,'Ушачи',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (74,'Чашники',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (75,'Шарковщина',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (76,'Шумилино',4);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (77,'Белыничи',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (78,'Бобруйск',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (79,'Быхов',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (80,'Глуск',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (81,'Горки',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (82,'Дрибин',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (83,'Кировск',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (84,'Климовичи',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (85,'Кличев',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (86,'Краснополье',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (87,'Кричев',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (88,'Круглое',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (89,'Костюковичи',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (90,'Могилёв',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (91,'Мстиславль',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (92,'Осиповичи',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (93,'Славгород',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (94,'Хотимск',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (95,'Чаусы',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (96,'Чериков',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (97,'Шклов',5);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (98,'Брагин',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (99,'Буда-Кошелёво',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (100,'Ветка',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (101,'Гомель',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (102,'Добруш',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (103,'Ельск',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (104,'Житковичи',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (105,'Жлобин',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (106,'Калинковичи',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (107,'Корма',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (108,'Лельчицы',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (109,'Лоев',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (110,'Мозырь',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (111,'Наровля',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (112,'Октябрьский',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (113,'Петриков',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (114,'Речица',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (115,'Рогачёв',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (116,'Светлогорск',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (117,'Хойники',6);
+INSERT INTO
+    `city` (`id`,`name`,`idRegion`)
+VALUES
+    (118,'Чечерск',6);

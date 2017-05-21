@@ -5,12 +5,11 @@ import by.andreiblinets.entity.User;
 import by.andreiblinets.repository.AccountRepository;
 import by.andreiblinets.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-/**
- * Created by Андрей on 28.04.2017.
- */
+@Service
 public class AccountSimple implements AccountService {
 
     @Autowired
