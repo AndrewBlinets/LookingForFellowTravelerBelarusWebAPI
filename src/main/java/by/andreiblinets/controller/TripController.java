@@ -1,6 +1,7 @@
 package by.andreiblinets.controller;
 
 import by.andreiblinets.DTO.SearchDTO;
+import by.andreiblinets.DTO.TripDTO;
 import by.andreiblinets.constant.TripConstant;
 import by.andreiblinets.entity.Trip;
 import by.andreiblinets.service.TripService;
@@ -21,8 +22,15 @@ public class TripController {
 
     @RequestMapping(value = TripConstant.SEARCH, method = RequestMethod.POST)
     @ResponseBody
-    public List<Trip> registration(@RequestBody SearchDTO searchDTO)
+    public List<Trip> search(@RequestBody SearchDTO searchDTO)
     {
         return tripService.search(searchDTO);
+    }
+
+    @RequestMapping(value = TripConstant.ADD_TRIP, method = RequestMethod.POST)
+    @ResponseBody
+    public String add(@RequestBody TripDTO tripDTO)
+    {
+        return (tripService.save(tripDTO)).toString();
     }
 }

@@ -33,7 +33,7 @@ public class UserController {
 
     @RequestMapping (value = UserConstant.AUTIFICANTION, method = RequestMethod.GET)
     public HashMap<String,InformationAboutUser> autification
-            (@PathVariable("login") String login, @PathVariable("hashpassword") String hashPassword)
+            (@RequestParam("login") String login, @RequestParam("hashpassword") String hashPassword)
     {
         return service.autification(login,hashPassword);
     }

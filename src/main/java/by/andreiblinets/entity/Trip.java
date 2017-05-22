@@ -49,6 +49,19 @@ public class Trip {
     @Column (name = TripConstant.AUTO_ADD )
     private boolean autoAdd;
 
+    public Trip(City cityidOfDeparture, City cityIdOfArrived, Date dataOfDeparture, Date timeOfDeparture, int compensation, int transportId, int countFree, String information, int departureDevialton, boolean autoAdd) {
+        this.cityidOfDeparture = cityidOfDeparture;
+        this.cityIdOfArrived = cityIdOfArrived;
+        this.dataOfDeparture = dataOfDeparture;
+        this.timeOfDeparture = timeOfDeparture;
+        this.compensation = compensation;
+        this.transportId = transportId;
+        this.countFree = countFree;
+        this.information = information;
+        this.departureDevialton = departureDevialton;
+        this.autoAdd = autoAdd;
+    }
+
     public long getId() {
         return id;
     }

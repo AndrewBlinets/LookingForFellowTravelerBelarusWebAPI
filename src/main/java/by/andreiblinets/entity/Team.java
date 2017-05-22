@@ -25,6 +25,12 @@ public class Team {
     @Column (name = TeamConstant.STATUS)
     private String status;
 
+    public Team(User user, Trip trip, String status) {
+        this.user = user;
+        this.trip = trip;
+        this.status = status;
+    }
+
     public long getId() {
         return id;
     }

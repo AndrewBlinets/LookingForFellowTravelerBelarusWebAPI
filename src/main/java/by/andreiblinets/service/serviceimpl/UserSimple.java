@@ -34,12 +34,12 @@ public class UserSimple implements UserService {
 
     public String save(UserRegistration user) {
         Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd  HH:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd_HH:mm:ss");
         User userSaveInBD = new User();
         userSaveInBD.setAboutUser(user.getAboutUser());
         userSaveInBD.setDataTimeRegistration(date);
         userSaveInBD.setEmail(user.getEmail());
-        userSaveInBD.setFoto(user.getFoto());
+        userSaveInBD.setFoto(" ");
         userSaveInBD.setHashPassword(user.getHashPassword());
         userSaveInBD.setName(user.getName());
         userSaveInBD.setPhone(user.getPhone());
@@ -50,7 +50,7 @@ public class UserSimple implements UserService {
                 user.getName() + "&" +
                 user.getSurname() + "&" +
                 dateFormat.format(new Date());
-        userRepository.saveAndFlush(userSaveInBD);
+
         TokenUser objTokenUser = new TokenUser();
         objTokenUser.setToken(token);
         objTokenUser.setUser(userSaveInBD);
