@@ -1,35 +1,37 @@
 package by.andreiblinets.DTO;
 
+import java.util.Date;
+
 public class SearchDTO {
 
-    private int idCityOfDeparture;
-    private int idCityOfArrived;
-    private String data;
+    private long idCityOfDeparture;
+    private long idCityOfArrived;
+    private Date data;
 
     public SearchDTO() {
     }
 
-    public int getIdCityOfDeparture() {
+    public long getIdCityOfDeparture() {
         return idCityOfDeparture;
     }
 
-    public void setIdCityOfDeparture(int idCityOfDeparture) {
+    public void setIdCityOfDeparture(long idCityOfDeparture) {
         this.idCityOfDeparture = idCityOfDeparture;
     }
 
-    public int getIdCityOfArrived() {
+    public long getIdCityOfArrived() {
         return idCityOfArrived;
     }
 
-    public void setIdCityOfArrived(int idCityOfArrived) {
+    public void setIdCityOfArrived(long idCityOfArrived) {
         this.idCityOfArrived = idCityOfArrived;
     }
 
-    public String getData() {
-        return data;
+    public void setData(Date data) {
+        this.data = data;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public Date getData() {
+        return data;
     }
 }

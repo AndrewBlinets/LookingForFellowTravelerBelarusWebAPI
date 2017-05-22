@@ -12,7 +12,7 @@ public class TripConstant {
     public static final String INFORMATION = "information";
     public static final String DEPARTURE_DEVIALTON = "departureDevialton";
     public static final String AUTO_ADD = "autoAdd";
-    public static final String SEARCH = "/search";
+    public static final String SEARCH = "/search/{idCityOfDeparture}&{idCityOfArrived}&{data}";
     public static final String ADD_TRIP = "/addtrip";
 
     public TripConstant() {

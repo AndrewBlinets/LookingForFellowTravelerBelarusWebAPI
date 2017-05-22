@@ -55,8 +55,8 @@ public class TripSimple implements TripService {
     }
 
     public List<Trip> search(SearchDTO searchDTO) {
-
-        return tripRepository.search(searchDTO.getData(),searchDTO.getIdCityOfDeparture(),
-                searchDTO.getIdCityOfArrived());
+        List<Trip> list =tripRepository.search(searchDTO.getData(),cityRepository.findOne(searchDTO.getIdCityOfDeparture()),
+                cityRepository.findOne(searchDTO.getIdCityOfArrived()));
+        return list;
     }
 }
