@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "FiraSansCondensed";
+    src: url("/resources/fonts/FiraSansCondensed-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "FiraSansCondensed";
+    background: #fdfdfd;
+}
+
+textarea,
+input {
+    font-family: "FiraSansCondensed";
+}
+
+#body {
+    width: 100%;
+    min-width: 800px;
+    background: #fdfdfd;
+}
+
+#header {
+    background: #0e5279;
+}
+
+#content {
+    margin: 0 15%;
+    padding: 25px 15px;
+}
+
+#leftblock {
+
+}
+
+#logo {
+    min-height: 50px;
+}
+
+#nav {
+    height: 50px;
+    background: #003e61;
+    padding: 0 15%;
+}
+
+#top-menu {
+    margin: 0;
+    padding: 10px 25px;
+    list-style: none;
+}
+
+#top-menu > li {
+    display: inline-block;
+    border: 1px solid #003e61;
+    height: 28px;
+}
+
+#top-menu > li:hover {
+    border-color: #fff;
+}
+
+#top-menu > li > a {
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.row {
+    padding: 7px 0;
+}
+
+.page-header {
+    margin: 0 0 calc(2rem - 0.15em) 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="mainTemplate" template="/WEB-INF/views/layouts/main.jsp">
+        <put-attribute name="title" value="Попутчик" />
+        <put-attribute name="menu" type="template" value="/WEB-INF/views/layouts/menu.jsp" />
+    </definition>
+
+    <definition name="index" extends="mainTemplate">
+        <put-attribute name="content" type="template" value="/WEB-INF/views/index.jsp" />
+    </definition>
+
+
+</tiles-definitions>

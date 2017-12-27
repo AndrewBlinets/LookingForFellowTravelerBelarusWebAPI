@@ -1,0 +1,40 @@
+#table {
+    width: 100%; /* Ширина таблицы */
+    background: #ffffff; /* Цвет фона нечетных строк */
+}
+TD, TH {
+    padding: 3px; /* Поля вокруг содержимого */
+    text-align: left; /* Выравнивание по левому краю */
+    border: hidden 0px;
+}
+.button-for-result
+{
+    margin-left: 10px;
+}
+.button-for-all-result
+{
+    margin-left: 10px;
+}
+.error-message
+{
+    width: 100%;
+    color: red;
+    text-align: left;
+}
+.class-flex
+{
+    display: flex;
+}
+.form
+{
+    margin-right: 10px;
+    display: flex;
+}
+input
+{
+    margin-left: 10px;
+}
+.element_number
+{
+text-align: center;
+}

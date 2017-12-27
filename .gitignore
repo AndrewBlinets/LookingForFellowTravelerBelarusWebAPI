@@ -6,3 +6,4 @@ api/src/test/
 dao/src/test/
 dao/target/
 web/src/test/
+target/
